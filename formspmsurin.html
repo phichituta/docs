@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>บันทึกข้อมูลประเด็นปัญหา 0, ร, มส, มผ</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* ยืดพื้นที่ให้เต็มหน้าจอ */
+      margin: 0; /* ลบ margin */
+      padding: 0;
+      font-family: sans-serif; /* เลือก font ที่ชอบ */
+    }
+
+    .container {
+      background-color: #f0f0f0; /* สีพื้นหลัง */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* เงา */
+      text-align: center; /* จัดกึ่งกลางข้อความ */
+      width: 500px; /* กำหนดความกว้างของกล่อง */
+    }
+
+    label {
+      display: block; /* จัดวาง label เป็นบล็อก */
+      margin-bottom: 5px; /* ระยะห่างด้านล่าง label */
+    }
+
+    textarea {
+      width: 100%; /* ยืด textarea ให้เต็มความกว้าง */
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical; /* ปรับขนาดได้เฉพาะแนวตั้ง */
+      margin-bottom: 15px; /* ระยะห่างด้านล่าง textarea */
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50; /* สีพื้นหลังของปุ่ม */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>กรุณากรอกข้อมูล</h2>
+    <h3>*** ประเด็นปัญหา 0, ร, มส, มผ ***</h3>
+
+    <form action="https://script.google.com/macros/s/AKfycbzenx1AM5_W6NYpsvO4fpbCe8LzGeM50Q04vqxxtqsG8FlsbRgEnxbylmi7B20LVhZM/exec" method="post">
+      <label for="caus">สาเหตุ:</label><br>
+      <textarea id="caus" name="caus" rows="4" cols="80"></textarea><br><br>
+
+      <label for="solution">วิธีแก้ไข:</label><br>
+      <textarea id="solution" name="solution" rows="4" cols="80"></textarea><br><br>
+
+      <label for="suggestion">ข้อเสนอแนะ:</label><br>
+      <textarea id="suggestion" name="suggestion" rows="4" cols="80"></textarea><br><br>
+
+      <input type="submit" value="บันทึกข้อมูล">
+    </form>
+  </div>
+
+</body>
+</html>
